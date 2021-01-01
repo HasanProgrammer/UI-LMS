@@ -1,0 +1,245 @@
+/* IRAN Sans-serif fonts are considered a proprietary software. To gain information about the laws regarding the use of these fonts, please visit www.fontiran.com --------------------------------------------------------------------- This set of fonts are used in this project under the license: (6CMXZA) --------------------------------------------------------------------- */
+
+@font-face
+{
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: 900;
+    src: url('../Fonts/eot/IRANSansWeb(FaNum)_Black.eot');
+    src: url('../Fonts/eot/IRANSansWeb(FaNum)_Black.eot?#iefix') format('embedded-opentype'),
+    url('../Fonts/woff2/IRANSansWeb(FaNum)_Black.woff2') format('woff2'),
+    url('../Fonts/woff/IRANSansWeb(FaNum)_Black.woff') format('woff'),
+    url('../Fonts/ttf/IRANSansWeb(FaNum)_Black.ttf') format('truetype');
+}
+@font-face
+{
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: bold;
+    src: url('../Fonts/eot/IRANSansWeb(FaNum)_Bold.eot');
+    src: url('../Fonts/eot/IRANSansWeb(FaNum)_Bold.eot?#iefix') format('embedded-opentype'),
+    url('../Fonts/woff2/IRANSansWeb(FaNum)_Bold.woff2') format('woff2'),
+    url('../Fonts/woff/IRANSansWeb(FaNum)_Bold.woff') format('woff'),
+    url('../Fonts/ttf/IRANSansWeb(FaNum)_Bold.ttf') format('truetype');
+}
+@font-face
+{
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: 500;
+    src: url('../Fonts/eot/IRANSansWeb(FaNum)_Medium.eot');
+    src: url('../Fonts/eot/IRANSansWeb(FaNum)_Medium.eot?#iefix') format('embedded-opentype'),
+    url('../Fonts/woff2/IRANSansWeb(FaNum)_Medium.woff2') format('woff2'),
+    url('../Fonts/woff/IRANSansWeb(FaNum)_Medium.woff') format('woff'),
+    url('../Fonts/ttf/IRANSansWeb(FaNum)_Medium.ttf') format('truetype');
+}
+@font-face
+{
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: 300;
+    src: url('../Fonts/eot/IRANSansWeb(FaNum)_Light.eot');
+    src: url('../Fonts/eot/IRANSansWeb(FaNum)_Light.eot?#iefix') format('embedded-opentype'),
+    url('../Fonts/woff2/IRANSansWeb(FaNum)_Light.woff2') format('woff2'),
+    url('../Fonts/woff/IRANSansWeb(FaNum)_Light.woff') format('woff'),
+    url('../Fonts/ttf/IRANSansWeb(FaNum)_Light.ttf') format('truetype');
+}
+@font-face
+{
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: 200;
+    src: url('../Fonts/eot/IRANSansWeb(FaNum)_UltraLight.eot');
+    src: url('../Fonts/eot/IRANSansWeb(FaNum)_UltraLight.eot?#iefix') format('embedded-opentype'),
+    url('../Fonts/woff2/IRANSansWeb(FaNum)_UltraLight.woff2') format('woff2'),
+    url('../Fonts/woff/IRANSansWeb(FaNum)_UltraLight.woff') format('woff'),
+    url('../Fonts/ttf/IRANSansWeb(FaNum)_UltraLight.ttf') format('truetype');
+}
+@font-face
+{
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: normal;
+    src: url('../Fonts/eot/IRANSansWeb(FaNum).eot');
+    src: url('../Fonts/eot/IRANSansWeb(FaNum).eot?#iefix') format('embedded-opentype'),
+    url('../Fonts/woff2/IRANSansWeb(FaNum).woff2') format('woff2'),
+    url('../Fonts/woff/IRANSansWeb(FaNum).woff') format('woff'),
+    url('../Fonts/ttf/IRANSansWeb(FaNum).ttf') format('truetype');
+}
+*
+{
+    padding: 0;
+    margin: 0;
+    font-family: IRANSans !important;
+}
+
+/*Hasan Global*/
+
+.banner-font
+{
+    font-size: 3.5em !important;
+}
+
+.default-font
+{
+    font-size: 0.85em !important;
+}
+
+.default-input
+{
+    background-color: transparent;
+    border: 1px solid #b4b4b4
+}
+
+.default-input:focus
+{
+    border: 1px solid var(--main-color);
+}
+
+.banner
+{
+    text-align: center !important;
+    align-content: center; !important;
+    background: linear-gradient(rgb(51, 129, 142), rgba(45, 109, 122, 0.5));
+    padding: 3em !important;
+}
+
+.feedback
+{
+    text-align: center !important;
+    align-content: center; !important;
+    margin: auto !important;
+}
+
+.category-csh
+{
+    background: url("../Assets/img/CSH.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.category-php
+{
+    background: url("../Assets/img/PHP.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.category-pyt
+{
+    background: url("../Assets/img/PYT.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.category-js
+{
+    background: url("../Assets/img/JS.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.category-asp
+{
+    background: url("../Assets/img/ASP.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.category-laravel
+{
+    background: url("../Assets/img/Laravel.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.category-django
+{
+    background: url("../Assets/img/Django.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.category-reactjs
+{
+    background: url("../Assets/img/ReactJS.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.category-sqlserver
+{
+    background: url("../Assets/img/SQLServer.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.category-mysql
+{
+    background: url("../Assets/img/MySQL.jpg") no-repeat center;
+    background-size: cover;
+}
+
+/*-------------------------------------------------------------------------------------------------*/
+
+/*Override*/
+
+.default-btn
+{
+    border-radius: 0 !important;
+    font-size: 0.95em !important;
+}
+
+.nav-link
+{
+    font-size: 0.95em !important;
+}
+
+.banner-area-three
+{
+    background-image:  url(../Assets/img/1606493058602.jpg) !important;
+}
+
+.tutor-area
+{
+    background-image: url(../Assets/img/man-pc-deployment-workstation-rwd.jpg.rendition.intel.web.864.486.jpg);
+}
+
+.courses-area-three
+{
+    background-image: url("../Assets/img/Computer Programming vs Web Design.jpg") !important;
+}
+
+.feedback-area.feedback-area-three
+{
+    background-image: url("../Assets/img/Computer Programming vs Web Design.jpg") !important;
+}
+
+.price
+{
+    border-radius: 0 !important;
+    width: auto !important;
+    height: auto !important;
+    line-height: 2em !important;
+    padding: 0.5em !important;
+    font-size: 1em !important;
+    font-family: IRANSans !important;
+}
+
+.page-title-area.bg-25
+{
+    background-image: url("../Assets/img/Computer Programming vs Web Design.jpg") !important;
+}
+
+.page-title-area .page-title-content
+{
+    color: white !important;
+}
+
+.react-responsive-modal-modal
+{
+    background: transparent !important;
+    max-width: 1300px !important;
+    box-shadow: none !important;
+}
+
+.showing-result
+{
+    margin-right: 0 !important;
+}
+
+.single-categories
+{
+    height: 10em !important;
+}

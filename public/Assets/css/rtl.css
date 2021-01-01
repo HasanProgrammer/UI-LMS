@@ -1,0 +1,622 @@
+body {
+  direction: rtl;
+  text-align: right;
+}
+
+.navbar-area .others-option .option-item {
+  padding-right: 0;
+  margin-right: 0;
+  padding-left: 20px;
+  margin-left: 20px;
+  border-right: none;
+  border-left: 1px solid #dadada;
+}
+
+.navbar-area .others-option .option-item .search-overlay.search-popup .search-form .search-input {
+  padding-right: 15px;
+}
+
+.navbar-area .others-option .option-item .search-overlay.search-popup .search-form .search-button {
+  right: unset;
+  left: 0;
+}
+
+.navbar-area .others-option .cart-icon {
+  margin-right: 0;
+  margin-left: 30px;
+}
+
+.navbar-area .main-nav .navbar .navbar-brand {
+  margin: 0;
+}
+
+.navbar-area .main-nav nav .navbar-nav .nav-item .dropdown-menu {
+  left: unset;
+  right: 0;
+}
+
+.navbar-area .main-nav nav .navbar-nav .nav-item .dropdown-menu li a {
+  text-align: right;
+}
+
+.navbar-area .main-nav nav .navbar-nav .nav-item .dropdown-menu li a i {
+  float: left;
+}
+
+.navbar-area .main-nav nav .navbar-nav .nav-item .dropdown-menu:last-child .dropdown-menu {
+  right: auto;
+  left: -100%;
+}
+
+.banner-area .social .social-wrap {
+  right: unset;
+  left: -115px;
+}
+
+.banner-area .social .social-wrap li.follow-us {
+  padding-right: 0;
+  padding-left: 70px;
+}
+
+.banner-area .social .social-wrap li.follow-us::before {
+  left: unset;
+  right: 85px;
+}
+
+.banner-area-two .banner-img .banner-shape-1 {
+  left: unset;
+  right: -40px;
+}
+
+.banner-area-two .banner-img .banner-shape-2 {
+  left: unset;
+  right: -70px;
+}
+
+.banner-area-two .banner-img .banner-shape-3 {
+  left: unset;
+  right: -160px;
+}
+
+.banner-area-two .banner-img .banner-shape-4 {
+  left: unset;
+  right: -400px;
+}
+
+.banner-area-two .banner-img .banner-shape-5 {
+  left: unset;
+  right: -490px;
+}
+
+.banner-area-two .banner-img .banner-shape-6 {
+  left: unset;
+  right: 0;
+}
+
+.banner-area-two .banner-img .banner-shape-7 {
+  left: 160px;
+  right: unset;
+}
+
+.banner-area-two .banner-img .banner-shape-8 {
+  left: 0;
+  right: unset;
+}
+
+.banner-area-three .enroll-wrap {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.modal-newsletter-area .modal-newsletter-wrap .newsletter-form .default-btn {
+  right: unset;
+  left: 0;
+}
+
+.modal-newsletter-area .modal-newsletter-wrap .newsletter-form .agree-label {
+  text-align: right;
+}
+
+.modal-newsletter-area .modal-newsletter-wrap .newsletter-form .agree-label #chb1 {
+  margin-right: 0;
+  margin-left: 5px;
+}
+
+.education-content ul li {
+  padding-left: 0;
+  padding-right: 35px;
+}
+
+.education-content ul li i {
+  left: unset;
+  right: 0;
+}
+
+.single-course .course-content .price {
+  right: unset;
+  left: 20px;
+}
+
+.single-course .course-content .lessons .float {
+  float: left;
+}
+
+.nice-select {
+  padding-right: 20px;
+}
+
+.nice-select:after {
+  right: unset !important;
+  left: 20px !important;
+}
+
+.nice-select span {
+  text-align: right !important;
+}
+
+.nice-select .option {
+  text-align: right;
+}
+
+.single-event .event-content {
+  padding-left: 20px;
+  padding-right: 230px;
+}
+
+.single-event .event-content ul li i {
+  padding-left: 5px;
+  padding-right: 0;
+}
+
+.discover-content ul li span {
+  margin-right: 0;
+  margin-left: 15px;
+}
+
+.discover-area .discover-img {
+  left: unset;
+  right: 0;
+}
+
+.news-listing-content .lessons .float {
+  float: left;
+}
+
+.single-news .news-content .lessons .float {
+  float: left;
+}
+
+.news-area .col-lg-4.col-sm-4.pr-0 {
+  padding-right: 15px !important;
+  padding-left: 0;
+}
+
+.news-area .col-lg-8.col-sm-8.pl-0 {
+  padding-left: 15px !important;
+  padding-right: 0;
+}
+
+.subscribe-wrap .default-btn {
+  float: left;
+}
+
+.subscribe-wrap .subscribe-img {
+  left: unset;
+  right: -375px;
+}
+
+.footer-widget .address li {
+  padding-left: 0;
+  padding-right: 40px;
+}
+
+.footer-widget .address li i {
+  left: unset;
+  right: 0;
+}
+
+.footer-widget .address .location {
+  padding-left: 0;
+  padding-right: 40px;
+}
+
+.footer-widget .address .location i {
+  left: unset;
+  right: 0;
+}
+
+.go-top {
+  right: unset;
+  left: -10%;
+}
+
+.go-top.active {
+  right: unset;
+  left: 3%;
+}
+
+.single-feature {
+  padding-left: 0;
+  padding-right: 105px;
+}
+
+.single-feature i {
+  left: unset;
+  right: 0;
+}
+
+.showing-result .showing-top-bar-ordering .nice-select {
+  text-align: right !important;
+  padding-right: 20px;
+}
+
+.showing-result .search-form .search-btn {
+  right: unset;
+  left: 15px;
+}
+
+.account-wrap ul li span {
+  float: left;
+}
+
+.account-wrap ul li a {
+  float: left;
+}
+
+.single-course-area .course-rating {
+  padding-left: 0;
+  padding-right: 70px;
+}
+
+.single-course-area .course-rating img {
+  left: unset;
+  right: 0;
+}
+
+.single-course-area .course-list li {
+  padding-left: 0;
+  padding-right: 35px;
+}
+
+.single-course-area .course-list li i {
+  left: unset;
+  right: 0;
+}
+
+.single-course-area .curriculum-content ul li .meet-time {
+  right: unset;
+  left: 30px;
+}
+
+.single-course-area .review-content .rating-bar-content .single-bar .percent {
+  right: unset;
+  left: 0;
+}
+
+.single-course-area .review-content .course-reviews-content .course-reviews li {
+  padding-left: 0;
+  padding-right: 90px;
+}
+
+.single-course-area .review-content .course-reviews-content .course-reviews li img {
+  left: unset;
+  right: 0;
+}
+
+.account-wrap p {
+  text-align: center;
+}
+
+.user-area-style .section-title {
+  text-align: right;
+}
+
+.user-area-style .text-right {
+  text-align: left !important;
+}
+
+.user-area-style .contact-form-action form .login-action .forgot-login {
+  float: right;
+}
+
+.user-area-style.recover-password-area .now-register {
+  float: left;
+}
+
+.faq-accordion .accordion .accordion-title i {
+  right: unset;
+  left: 25px;
+}
+
+.terms-conditions-wrap ul {
+  margin-left: 0;
+  margin-right: 20px;
+}
+
+.coming-soon-area .coming-soon-content .newsletter-form button {
+  right: unset;
+  left: 0;
+}
+
+.coming-soon-area .coming-soon-content .newsletter-form .input-newsletter {
+  padding-right: 15px;
+}
+
+.sidebar-widget.search .search-form .search-button {
+  left: 0;
+  right: unset;
+}
+
+.sidebar-widget h3::before {
+  left: unset;
+  right: 0;
+}
+
+.sidebar-widget.popular-post .item .thumb {
+  float: right;
+  margin-right: 0;
+  margin-left: 15px;
+}
+
+.cart-area .cart-table table tbody tr td.product-subtotal .remove {
+  float: left;
+  margin-left: 0;
+  margin-right: 50px;
+}
+
+.cart-area .cart-totals ul li span {
+  float: left;
+}
+
+.checkout-area .cart-totals ul li span {
+  float: left;
+}
+
+.checkout-area .faq-accordion .accordion .accordion-title::before {
+  left: unset;
+  right: 0;
+}
+
+.checkout-area .faq-accordion .accordion .accordion-title::after {
+  left: unset;
+  right: 3px;
+}
+
+.checkout-area .faq-accordion .accordion .accordion-title {
+  padding-left: 0;
+  padding-right: 25px;
+}
+
+.checkout-area .billing-details .form-group .nice-select {
+  text-align: right !important;
+}
+
+.product-details-area .products-details-tab .tab_content .tabs_item .products-details-tab-content .product-review-form .review-comments .review-item {
+  padding-right: 0;
+  padding-left: 200px;
+}
+
+.product-details-area .products-details-tab .tab_content .tabs_item .products-details-tab-content .product-review-form .review-comments .review-item .review-report-link {
+  right: unset;
+  left: 0;
+}
+
+.product-details-area .product-details-desc .product-summery li span {
+  left: unset;
+  right: 115px;
+}
+
+.product-details-area .product-details-desc .social-wrap li span {
+  margin-right: 0;
+  margin-left: 45px;
+}
+
+.product-details-area .product-details-desc .social-wrap li {
+  padding-right: 0;
+}
+
+.product-details-area .product-details-desc h3 {
+  margin-right: 0 !important;
+  margin-left: 10px;
+}
+
+.single-blog-content .social-wrap li span {
+  margin-right: 0;
+  margin-left: 10px;
+}
+
+.single-blog-content .blog-top-content .post-details li:first-child {
+  border: none;
+  padding-left: 0;
+  padding-right: 0;
+  margin-right: 0;
+}
+
+.single-blog-content .blog-top-content blockquote::before {
+  left: unset;
+  right: 0;
+}
+
+.single-blog-content .comments-wrap ul li {
+  padding-left: 0;
+  padding-right: 100px;
+}
+
+.single-blog-content .comments-wrap ul li img {
+  left: unset;
+  right: 0;
+}
+
+.single-blog-content .leave-reply-wrap input[type=checkbox], .single-blog-content .leave-reply-wrap input[type=radio] {
+  margin-right: 0;
+  margin-left: 5px;
+}
+
+.contact-info-area .single-contact-info::before {
+  left: unset;
+  right: -15px;
+}
+
+.page-title-area .page-title-content ul li {
+  margin-right: 0;
+  margin-left: 15px;
+  padding-right: 0;
+  padding-left: 15px;
+}
+
+.page-title-area .page-title-content ul li::before {
+  right: unset;
+  left: -3px;
+}
+
+.single-blog-content .blog-top-content .post-details li:last-child {
+  padding-right: 20px;
+  margin-right: 20px;
+  border-right: 1px solid #616161;
+  border-left: none;
+}
+
+@media only screen and (max-width: 767px) {
+  .single-event .event-content {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .news-area .col-lg-4.col-sm-4.pr-0 {
+    padding-right: 15px !important;
+    padding-left: 15px !important;
+  }
+  .news-area .col-lg-8.col-sm-8.pl-0 {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+  .subscribe-wrap .default-btn {
+    float: unset;
+  }
+  .single-feature {
+    padding-right: 0;
+  }
+  .single-course-area .review-content .course-reviews-content .course-reviews li {
+    padding-right: 0;
+  }
+  .instructor-content {
+    text-align: center;
+  }
+  .user-area-style .contact-form-action form .text-right {
+    text-align: right !important;
+  }
+  .product-details-area .products-details-tab .tab_content .tabs_item .products-details-tab-content .product-review-form .review-comments .review-item {
+    padding-left: 0;
+  }
+  .single-blog-content .comments-wrap ul li {
+    padding-right: 0;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .offset-sm-3 {
+    margin-right: 25%;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .navbar-area .others-option .cart-icon {
+    margin-right: -4px !important;
+  }
+  .single-event .event-content {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .news-area .col-lg-4.col-sm-4.pr-0 {
+    padding-right: 15px !important;
+    padding-left: 15px !important;
+  }
+  .news-area .col-lg-8.col-sm-8.pl-0 {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+  .subscribe-wrap .default-btn {
+    float: unset;
+  }
+  .offset-sm-3 {
+    margin-right: 25%;
+  }
+  .offset-md-3 {
+    margin-right: 25%;
+  }
+  .single-feature {
+    padding-right: 0;
+  }
+  .instructor-content {
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .single-event .event-content {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .mean-container a.meanmenu-reveal {
+    left: 0 !important;
+    right: auto !important;
+    padding: 23px 0 0px 15px !important;
+  }
+  .mobile-nav .logo {
+    right: 15px;
+  }
+  .mean-container .mean-nav ul li a {
+    text-align: right;
+    width: 93%;
+  }
+  .mean-container .mean-nav ul li a.mean-expand {
+    text-align: left;
+    left: 0;
+    right: auto;
+  }
+  .others-option-for-responsive .dot-menu {
+    left: 70px;
+    right: unset;
+  }
+  .others-option-for-responsive .container .container {
+    right: unset;
+    left: 0;
+  }
+  .others-option-for-responsive .option-inner .others-option {
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+  .others-option-for-responsive .option-inner .others-option {
+    right: unset;
+    left: 0;
+  }
+  .navbar-area .others-option {
+    left: 70px;
+    right: unset;
+  }
+  .navbar-area .others-option .cart-icon {
+    margin-left: 15px;
+    margin-right: 7px;
+    padding-right: 15px;
+  }
+  .navbar-area .others-option .cart-icon a span {
+    right: 5px;
+  }
+  .others-option-for-responsive .option-inner .others-option .option-item:first-child {
+    padding-left: 10px;
+  }
+  .navbar-area .others-option .option-item .search-overlay.search-popup {
+    right: unset;
+    left: -186px;
+  }
+  .banner-area-three .enroll-wrap {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .single-course-area .course-rating {
+    padding-right: 0;
+  }
+}
+/*# sourceMappingURL=rtl.css.map */
