@@ -1498,7 +1498,7 @@ Course Area Style
 
 .single-course .course-content p {
   margin-bottom: 18px;
-  border-bottom: 1px solid #ebebeb;
+  /*border-bottom: 1px solid #ebebeb;*/
   padding-bottom: 18px;
 }
 

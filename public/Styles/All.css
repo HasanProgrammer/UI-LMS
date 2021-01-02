@@ -243,3 +243,29 @@
 {
     height: 10em !important;
 }
+
+.single-course img
+{
+    width: 100% !important;
+    height: 12em !important;
+}
+
+.single-course .course-content
+{
+    height: 15em !important;
+    padding-bottom: 0 !important;
+}
+
+.single-course .course-content p
+{
+    height: 4.7em !important;
+    overflow: hidden !important;
+}
+
+.single-course .course-content .lessons
+{
+    border-top: 1px solid #ebebeb;
+    height: 3em !important;
+    overflow: hidden !important;
+    padding-top: 1.1em !important;
+}

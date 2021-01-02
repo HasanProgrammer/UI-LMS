@@ -1,19 +1,22 @@
 {
   "HomeComponents":
   {
-    "AuthPage"           : "/auth"            ,
-    "IndexPage"          : "/"                ,
-    "TermDetailsPage"    : "/term"            ,
-    "TermsPage"          : "/terms"           ,
-    "TermsCSHPage"       : "/terms/csharp"    ,
-    "TermsPHPPage"       : "/terms/php"       ,
-    "TermsPYTPage"       : "/terms/python"    ,
-    "TermsJSPage"        : "/terms/javascript",
-    "TermsASPPage"       : "/terms/aspcore"   ,
-    "TermsLaravelPage"   : "/terms/laravel"   ,
-    "TermsDjangoPage"    : "/terms/django"    ,
-    "TermsReactJSPage"   : "/terms/reactjs"   ,
-    "TermsSQLServerPage" : "/terms/sqlserver" ,
+    "AuthPage"           : "/auth"                ,
+    "VerifyAuthPage"     : "/auth/verify"         ,
+    "VerifyEmailPage"    : "/auth/verify/email"   ,
+    "ResetPasswordPage"  : "/auth/reset-password" ,
+    "IndexPage"          : "/"                    ,
+    "TermDetailsPage"    : "/term"                ,
+    "TermsPage"          : "/terms"               ,
+    "TermsCSHPage"       : "/terms/csharp"        ,
+    "TermsPHPPage"       : "/terms/php"           ,
+    "TermsPYTPage"       : "/terms/python"        ,
+    "TermsJSPage"        : "/terms/javascript"    ,
+    "TermsASPPage"       : "/terms/aspcore"       ,
+    "TermsLaravelPage"   : "/terms/laravel"       ,
+    "TermsDjangoPage"    : "/terms/django"        ,
+    "TermsReactJSPage"   : "/terms/reactjs"       ,
+    "TermsSQLServerPage" : "/terms/sqlserver"     ,
     "TermsMySQLPage"     : "/terms/mysql"
   }
 }

@@ -1,4 +1,12 @@
-import React from "react";
+import React    from "react";
+import { Link } from "react-router-dom";
+
+/*-------------------------------------------------------------------*/
+
+//Configs
+import RouteConfig from "./../../../../Configs/Route.json";
+
+/*-------------------------------------------------------------------*/
 
 class Content extends React.Component
 {
@@ -36,7 +44,7 @@ class Content extends React.Component
                                                 {/*</span>*/}
 
                                                 <span className="forgot-login">
-                                                    <a href="recover-password.html">فراموشی رمز عبور</a>
+                                                    <Link to={`${RouteConfig.HomeComponents.VerifyEmailPage}`}>فراموشی رمز عبور</Link>
                                                 </span>
                                                 <br/>
                                             </div>

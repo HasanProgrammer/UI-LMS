@@ -4,20 +4,23 @@ import { BrowserRouter as Router , Switch , Route } from "react-router-dom";
 /*-------------------------------------------------------------------*/
 
 //Components
-import Auth            from "./HomeComponents/Auth";
-import IndexHomePage   from "./HomeComponents/IndexPage";
-import TermDetails     from "./HomeComponents/TermDetails";
-import Terms           from "./HomeComponents/Terms";
-import TermsCSH        from "./HomeComponents/TermsCSH";
-import TermsPHP        from "./HomeComponents/TermsPHP";
-import TermsPython     from "./HomeComponents/TermsPython";
-import TermsJavaScript from "./HomeComponents/TermsJavaScript";
-import TermsASP        from "./HomeComponents/TermsASP";
-import TermsLaravel    from "./HomeComponents/TermsLaravel";
-import TermsDjango     from "./HomeComponents/TermsDjango";
-import TermsReactJS    from "./HomeComponents/TermsReactJS";
-import TermsSQL        from "./HomeComponents/TermsSQL";
-import TermsMySQL      from "./HomeComponents/TermsMySQL";
+import Auth             from "./HomeComponents/Auth";
+import VerifyPhoneEmail from "./HomeComponents/VerifyPhoneEmail";
+import VerifyEmail      from "./HomeComponents/VerifyEmail";
+import ResetPassword    from "./HomeComponents/ResetPassword";
+import IndexHomePage    from "./HomeComponents/IndexPage";
+import TermDetails      from "./HomeComponents/TermDetails";
+import Terms            from "./HomeComponents/Terms";
+import TermsCSH         from "./HomeComponents/TermsCSH";
+import TermsPHP         from "./HomeComponents/TermsPHP";
+import TermsPython      from "./HomeComponents/TermsPython";
+import TermsJavaScript  from "./HomeComponents/TermsJavaScript";
+import TermsASP         from "./HomeComponents/TermsASP";
+import TermsLaravel     from "./HomeComponents/TermsLaravel";
+import TermsDjango      from "./HomeComponents/TermsDjango";
+import TermsReactJS     from "./HomeComponents/TermsReactJS";
+import TermsSQL         from "./HomeComponents/TermsSQL";
+import TermsMySQL       from "./HomeComponents/TermsMySQL";
 
 /*-------------------------------------------------------------------*/
 
@@ -38,6 +41,9 @@ class Root extends React.Component
 
                     {/*Home*/}
                     <Route exact path={`${RouteConfig.HomeComponents.AuthPage}`}           component={Auth}/>
+                    <Route exact path={`${RouteConfig.HomeComponents.VerifyAuthPage}`}     component={VerifyPhoneEmail}/>
+                    <Route exact path={`${RouteConfig.HomeComponents.VerifyEmailPage}`}    component={VerifyEmail}/>
+                    <Route exact path={`${RouteConfig.HomeComponents.ResetPasswordPage}`}  component={ResetPassword}/>
                     <Route exact path={`${RouteConfig.HomeComponents.IndexPage}`}          component={IndexHomePage}/>
                     <Route exact path={`${RouteConfig.HomeComponents.TermDetailsPage}`}    component={TermDetails}/>
                     <Route exact path={`${RouteConfig.HomeComponents.TermsPage}`}          component={Terms}/>
