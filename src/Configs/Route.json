@@ -6,7 +6,7 @@
     "VerifyEmailPage"    : "/auth/verify/email"   ,
     "ResetPasswordPage"  : "/auth/reset-password" ,
     "IndexPage"          : "/"                    ,
-    "TermDetailsPage"    : "/term"                ,
+    "TermDetailsPage"    : "/term/:id"            ,
     "TermsPage"          : "/terms"               ,
     "TermsCSHPage"       : "/terms/csharp"        ,
     "TermsPHPPage"       : "/terms/php"           ,

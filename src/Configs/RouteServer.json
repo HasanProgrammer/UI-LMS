@@ -1,0 +1,16 @@
+{
+  "Root"                : "https://localhost:5001"              ,
+  "CountTermCategory"   : "/api/v1.0/term/count/category"       ,
+  "AllTerm"             : "/api/v1.0/terms"                     ,
+  "AllCategoryTerm"     : "/api/v1.0/terms/category/"           ,
+  "TermDetails"         : "/api/v1.0/term/details/"             ,
+  "TermDetailsUser"     : "/api/v1.0/auth/term/details/"        ,
+  "DownloadVideoPublic" : "/api/v1.0/video/public/download/"    ,
+  "DownloadVideo"       : "/api/v1.0/video/download/"           ,
+  "PurchaseTerm"        : "/api/v1.0/purchase/term/"            ,
+  "RegisterUser"        : "/api/v1.0/auth/register"             ,
+  "VerifyAccount"       : "/api/v1.0/auth/verify-account"       ,
+  "VerifyEmail"         : "/api/v1.0/auth/verify-email"         ,
+  "ResetPassword"       : "/api/v1.0/auth/reset-password"       ,
+  "LoginUser"           : "/api/v1.0/auth/login"
+}

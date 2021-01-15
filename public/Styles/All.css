@@ -171,6 +171,33 @@
     background-size: cover;
 }
 
+.image-thumb
+{
+    width: 3.5em !important;
+    height: 3.5em !important;
+    border-radius: 0 !important;
+}
+
+.comment-area
+{
+    background-color: #f8f8f8 !important;
+    padding: 1em !important;
+    border-right: 1px solid gray !important;
+}
+
+.answer-area
+{
+    background-color: #f0f0f0 !important;
+    padding: 1em !important;
+    border-right: 1px solid gray !important;
+}
+
+.answer-area li, .answer-area span
+{
+    margin-top:1.5em !important;
+    margin-bottom: 1.5em !important;
+}
+
 /*-------------------------------------------------------------------------------------------------*/
 
 /*Override*/
