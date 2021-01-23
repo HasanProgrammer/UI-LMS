@@ -17,7 +17,7 @@ class Auth extends React.Component
         return (
             <MasterPage>
                 <HeaderSingle/>
-                <PageTitle title="احراز هویت کاربران" subtitle="شما در این قسمت، میتوانید در سیستم عضو شده و یا در صورت داشتن عضویت، لاگین نمایید"/>
+                <PageTitle title="احراز هویت کاربران ؛" subtitle="شما در این قسمت، میتوانید در سیستم عضو شده و یا در صورت داشتن عضویت، لاگین نمایید"/>
                 <Content/>
             </MasterPage>
         );

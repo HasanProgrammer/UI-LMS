@@ -1,7 +1,16 @@
 import React from "react";
 
+/*-------------------------------------------------------------------*/
+
+//Context
+import MasterContext from "../../Contexts/MasterContext";
+
+/*-------------------------------------------------------------------*/
+
 class Footer extends React.Component
 {
+    static contextType = MasterContext;
+
     render()
     {
         return (
@@ -26,7 +35,7 @@ class Footer extends React.Component
                                     </li>
                                     <li>
                                         <i className="bx bxs-phone-call"/>
-                                        <a href="tel:+98 9026676147" dir="ltr">+98 9026676147</a>
+                                        <a href="tel:+98 9026676147" dir="rtl">{this.context.EnNumberToPersian("09026676147")}</a>
                                     </li>
                                 </ul>
                             </div>

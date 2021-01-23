@@ -29,9 +29,6 @@ class Content extends React.Component
                 <div className="container">
                     <div className="row" style={{cursor: "default", margin: "auto"}}>
                         <div className="col-lg-6" style={{margin: "auto"}}>
-                            <div className="section-title">
-                                <h2>رمز عبور جدید</h2>
-                            </div>
                             <div className="contact-form-action mb-50">
                                 <form method="post">
                                     <div className="row">
@@ -50,7 +47,7 @@ class Content extends React.Component
                                         </div>
 
                                         <div className="col-12">
-                                            <button onClick={this.ResetPassword} className="default-btn" type="button">
+                                            <button onClick={this.ResetPassword} className="default-btn register" type="button">
                                                 تغییر رمز عبور
                                             </button>
                                         </div>

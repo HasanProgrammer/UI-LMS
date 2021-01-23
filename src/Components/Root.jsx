@@ -11,6 +11,7 @@ import ResetPassword    from "./ResetPassword";
 import Index            from "./Index";
 import TermDetails      from "./TermDetails";
 import Terms            from "./Terms";
+import TermsOwned       from "./TermsOwned";
 import TermsCSH         from "./TermsCSH";
 import TermsPHP         from "./TermsPHP";
 import TermsPython      from "./TermsPython";
@@ -47,6 +48,7 @@ class Root extends React.Component
                     <Route exact path={`${RouteConfig.HomeComponents.IndexPage}`}          component={Index}/>
                     <Route exact path={`${RouteConfig.HomeComponents.TermDetailsPage}`}    component={TermDetails}/>
                     <Route exact path={`${RouteConfig.HomeComponents.TermsPage}`}          component={Terms}/>
+                    <Route exact path={`${RouteConfig.HomeComponents.TermsOwnedPage}`}     component={TermsOwned}/>
                     <Route exact path={`${RouteConfig.HomeComponents.TermsCSHPage}`}       component={TermsCSH}/>
                     <Route exact path={`${RouteConfig.HomeComponents.TermsPHPPage}`}       component={TermsPHP}/>
                     <Route exact path={`${RouteConfig.HomeComponents.TermsPYTPage}`}       component={TermsPython}/>

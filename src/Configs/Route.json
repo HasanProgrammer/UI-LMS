@@ -8,6 +8,7 @@
     "IndexPage"          : "/"                    ,
     "TermDetailsPage"    : "/term/:id"            ,
     "TermsPage"          : "/terms"               ,
+    "TermsOwnedPage"     : "/terms/owned"         ,
     "TermsCSHPage"       : "/terms/csharp"        ,
     "TermsPHPPage"       : "/terms/php"           ,
     "TermsPYTPage"       : "/terms/python"        ,

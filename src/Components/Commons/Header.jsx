@@ -73,20 +73,31 @@ class Header extends React.Component
                                         </ul>
                                     </li>
                                     <li className="nav-item">
-                                        <a href="#" className="nav-link">
+                                        <a href="" className="nav-link">
                                             وبلاگ
                                         </a>
                                     </li>
                                     <li className="nav-item">
-                                        <a href="contact.html" className="nav-link">ارتباط با مجموعه</a>
+                                        <a href="" className="nav-link">ارتباط با مجموعه</a>
                                     </li>
                                     <li className="nav-item">
-                                        <a href="contact.html" className="nav-link">درباره سایت</a>
+                                        <a href="" className="nav-link">درباره سایت</a>
                                     </li>
                                     <li className="nav-item">
-                                        <a href="#" className="nav-link">
-                                            سبد خرید
-                                        </a>
+                                        <a target="_blank" href="https://programming-land.ir" className="nav-link">سفارش پروژه</a>
+                                    </li>
+                                    <li className="nav-item">
+                                        {
+                                            localStorage.getItem("Token") !== null
+                                            ?
+                                            (
+                                                <Link to={`${RouteConfig.HomeComponents.TermsOwnedPage}`} className="nav-link">
+                                                    دوره های من
+                                                </Link>
+                                            )
+                                            :
+                                            null
+                                        }
                                     </li>
                                 </ul>
 
@@ -97,7 +108,7 @@ class Header extends React.Component
                                         </Link>
                                     </div>
                                     <div className="register">
-                                        <Link to={`${RouteConfig.HomeComponents.AuthPage}`} className="default-btn">
+                                        <Link to={`${RouteConfig.HomeComponents.AuthPage}`} className="default-btn register">
                                             ورود | عضویت
                                         </Link>
                                     </div>

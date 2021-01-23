@@ -10,7 +10,8 @@ import RouteServerConfig from "../../../Configs/RouteServer";
 /*-------------------------------------------------------------------*/
 
 //Plugins
-import Axios from "axios";
+import Axios   from "axios";
+import Persian from "persian";
 
 /*-------------------------------------------------------------------*/
 
@@ -43,11 +44,11 @@ class Category extends React.Component
                     CountPYT  : response?.data?.body?.countPYT,
                     CountJS   : response?.data?.body?.countJS,
                     CountASP  : response?.data?.body?.countASP,
-                    CountLRL  : response?.data?.body?.countDjango,
-                    CountDJO  : response?.data?.body?.countLaravel,
+                    CountLRL  : response?.data?.body?.countLaravel,
+                    CountDJO  : response?.data?.body?.countDjango,
                     CountRTJ  : response?.data?.body?.countReactJS,
                     CountSQL  : response?.data?.body?.countSQLServer,
-                    CountMSQL : response?.data?.body?.countMYSQL
+                    CountMSQL : response?.data?.body?.countMYSql
                 })
             }
 
@@ -67,7 +68,7 @@ class Category extends React.Component
                                         <Link to={`${RouteConfig.HomeComponents.TermsCSHPage}`}>
                                             <h3>برنامه نویسی #C</h3>
                                         </Link>
-                                        <span>{ this.state.CountCSH } دوره </span>
+                                        <span>{ Persian.toPersian(parseInt(this.state.CountCSH)) } دوره </span>
                                     </div>
                                 </div>
                             </div>
@@ -79,7 +80,7 @@ class Category extends React.Component
                                         <Link to={`${RouteConfig.HomeComponents.TermsPHPPage}`}>
                                             <h3>برنامه نویسی PHP</h3>
                                         </Link>
-                                        <span>{ this.state.CountPHP } دوره </span>
+                                        <span>{ Persian.toPersian(parseInt(this.state.CountPHP)) } دوره </span>
                                     </div>
                                 </div>
                             </div>
@@ -91,7 +92,7 @@ class Category extends React.Component
                                         <Link to={`${RouteConfig.HomeComponents.TermsPYTPage}`}>
                                             <h3>برنامه نویسی Python</h3>
                                         </Link>
-                                        <span>{ this.state.CountPYT } دوره </span>
+                                        <span>{ Persian.toPersian(parseInt(this.state.CountPYT)) } دوره </span>
                                     </div>
                                 </div>
                             </div>
@@ -103,7 +104,7 @@ class Category extends React.Component
                                         <Link to={`${RouteConfig.HomeComponents.TermsJSPage}`}>
                                             <h3>برنامه نویسی JavaScript</h3>
                                         </Link>
-                                        <span>{ this.state.CountJS } دوره </span>
+                                        <span>{ Persian.toPersian(parseInt(this.state.CountJS)) } دوره </span>
                                     </div>
                                 </div>
                             </div>
@@ -116,7 +117,7 @@ class Category extends React.Component
                                         <Link to={`${RouteConfig.HomeComponents.TermsASPPage}`}>
                                             <h3>برنامه نویسی ASP Core</h3>
                                         </Link>
-                                        <span>{ this.state.CountASP } دوره </span>
+                                        <span>{ Persian.toPersian(parseInt(this.state.CountASP)) } دوره </span>
                                     </div>
                                 </div>
                             </div>
@@ -128,7 +129,7 @@ class Category extends React.Component
                                         <Link to={`${RouteConfig.HomeComponents.TermsLaravelPage}`}>
                                             <h3>برنامه نویسی Laravel</h3>
                                         </Link>
-                                        <span>{ this.state.CountLRL } دوره </span>
+                                        <span>{ Persian.toPersian(parseInt(this.state.CountLRL)) } دوره </span>
                                     </div>
                                 </div>
                             </div>
@@ -140,7 +141,7 @@ class Category extends React.Component
                                         <Link to={`${RouteConfig.HomeComponents.TermsDjangoPage}`}>
                                             <h3>برنامه نویسی Django</h3>
                                         </Link>
-                                        <span>{ this.state.CountDJO } دوره </span>
+                                        <span>{ Persian.toPersian(parseInt(this.state.CountDJO)) } دوره </span>
                                     </div>
                                 </div>
                             </div>
@@ -152,7 +153,7 @@ class Category extends React.Component
                                         <Link to={`${RouteConfig.HomeComponents.TermsReactJSPage}`}>
                                             <h3>برنامه نویسی ReactJS</h3>
                                         </Link>
-                                        <span>{ this.state.CountRTJ } دوره </span>
+                                        <span>{ Persian.toPersian(parseInt(this.state.CountRTJ)) } دوره </span>
                                     </div>
                                 </div>
                             </div>
@@ -165,7 +166,7 @@ class Category extends React.Component
                                         <Link to={`${RouteConfig.HomeComponents.TermsSQLServerPage}`}>
                                             <h3>برنامه نویسی SQL Server</h3>
                                         </Link>
-                                        <span>{ this.state.CountSQL } دوره </span>
+                                        <span>{ Persian.toPersian(parseInt(this.state.CountSQL)) } دوره </span>
                                     </div>
                                 </div>
                             </div>
@@ -177,7 +178,7 @@ class Category extends React.Component
                                         <Link to={`${RouteConfig.HomeComponents.TermsMySQLPage}`}>
                                             <h3>برنامه نویسی MySQL</h3>
                                         </Link>
-                                        <span>{ this.state.CountMSQL } دوره </span>
+                                        <span>{ Persian.toPersian(parseInt(this.state.CountMSQL)) } دوره </span>
                                     </div>
                                 </div>
                             </div>

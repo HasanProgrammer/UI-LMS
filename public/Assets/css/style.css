@@ -51,7 +51,7 @@ Default Style
 ============================*/
 /*@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&amp;display=swap");*/
 :root {
-  --font-family: 'Rubik', sans-serif;
+  --font-family: IRANSans;
   --main-color: #ffb607;
   --body-color: #616161;
   --heading-color: #111111;
@@ -5175,7 +5175,7 @@ Event Area Style
   left: -30px;
   width: 200%;
   height: 1px;
-  background-color: #eaedff;
+  background-color: #dedede;
 }
 
 .account-wrap ul li:last-child {

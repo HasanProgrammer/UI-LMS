@@ -10,42 +10,40 @@ import RouteServerConfig from "./../../Configs/RouteServer";
 /*-------------------------------------------------------------------*/
 
 //Plugins
-import { PulseLoader } from "react-spinners";
+import EllipsisText from "react-ellipsis-text";
+
+/*-------------------------------------------------------------------*/
+
+//Contexts
+import MasterContext from "../../Contexts/MasterContext"; /*Using*/
 
 /*-------------------------------------------------------------------*/
 
 class CardTerm extends React.Component
 {
-    // static PreLoaderStyle =
-    // {
-    //     width           : "100%"   ,
-    //     height          : "12em"   ,
-    //     display         : "block"  ,
-    //     margin          : "auto"   ,
-    //     borderColor     : "red"    ,
-    //     textAlign       : "center" ,
-    //     verticalAlign   : "center" ,
-    //     backgroundColor : "whitesmoke"
-    // };
+    static contextType = MasterContext;
 
     render()
     {
         return (
-            <div className="single-course" dir="rtl">
-                <Link style={{width: "100%"}} to={`${RouteConfig.HomeComponents.TermDetailsPage}`}>
-                    {/*<PulseLoader loading={true} css={CardTerm.PreLoaderStyle} size={10}/>*/}
-                    <img src={RouteServerConfig.Root + "/" + this.props.image} alt="Image"/>
-                </Link>
+            <div className="single-course" dir="rtl" title={this.props.title}>
+                <img src={RouteServerConfig.Root + "/" + this.props.image} alt="Image"/>
                 <div className="course-content" style={{cursor: "default"}}>
-                    <span className="price">{this.props.price} تومان </span>
-                    <Link onClick={this.onClickShowDetailsButton} to={`${RouteConfig.HomeComponents.TermDetailsPage.replace(":id", this.props.id)}`}>
-                        <h3>{this.props.title}</h3>
+                    <span className="price">{this.context.EnNumberToPersian(this.props.price.toString())} تومان </span>
+                    <Link to={`${RouteConfig.HomeComponents.TermDetailsPage.replace(":id", this.props.id)}`}>
+                        <h3><EllipsisText text={this.props.title} length={33}/></h3>
                     </Link>
-                    <p>{this.props.description}</p>
+                    <p><EllipsisText text={this.props.description} length={80}/></p>
                     <ul className="lessons">
-                        <li>{this.props.countVideo} درس </li>
-                        <li className="float">{this.props.countUser} دانشجو </li>
+                        <li>{this.context.EnNumberToPersian(this.props.countVideo.toString())} درس </li>
+                        <li className="float">{this.context.EnNumberToPersian(this.props.countUser.toString())} دانشجو </li>
                     </ul>
+
+                    <div className="pt-4">
+                        <Link style={{width: "100%"}} to={`${RouteConfig.HomeComponents.TermDetailsPage.replace(":id", this.props.id)}`}>
+                            <button className="default-btn register" type="button">مشاهده بیشتر</button>
+                        </Link>
+                    </div>
                 </div>
             </div>
         );

@@ -11,6 +11,7 @@ import RouteServerConfig from "./../../../Configs/RouteServer.json";
 
 //Plugins
 import Axios from "axios";
+
 import { PulseLoader }    from "react-spinners";
 import { toast as Toast } from "react-toastify";
 
@@ -39,9 +40,6 @@ class Content extends React.Component
                     <div className="container">
                         <div className="row" style={{cursor: "default"}}>
                             <div className="col-lg-6">
-                                <div className="section-title">
-                                    <h2>ورود</h2>
-                                </div>
                                 <div className="contact-form-action mb-50">
                                     <form method="post">
                                         <div className="row">
@@ -67,7 +65,7 @@ class Content extends React.Component
                                             </div>
 
                                             <div className="col-12">
-                                                <button onClick={this.LoginUser} className="default-btn" type="button">
+                                                <button onClick={this.LoginUser} className="default-btn register" type="button">
                                                     ورود به سیستم
                                                 </button>
                                             </div>
@@ -83,9 +81,6 @@ class Content extends React.Component
                                 </div>
                             </div>
                             <div className="col-lg-6">
-                                <div className="section-title">
-                                    <h2>عضویت</h2>
-                                </div>
                                 <div className="contact-form-action">
                                     <form method="post">
                                         <div className="row">
@@ -115,7 +110,7 @@ class Content extends React.Component
                                             </div>
                                             <div className="col-12">
                                                 <div className="row align-items-center">
-                                                    <div className="col-lg-6 col-sm-6">
+                                                    <div className="col-lg-12 col-sm-12">
                                                         <button onClick={this.RegisterUser} className="default-btn register" type="button">
                                                             عضو شوید
                                                         </button>
@@ -243,6 +238,13 @@ class Content extends React.Component
 
             if(response?.data?.code == 201 || response?.data?.code == 200)
             {
+                this.setState({
+                    UsernameRegister : null,
+                    PasswordRegister : null,
+                    Email            : null,
+                    Phone            : null
+                });
+
                 Toast.warning("شما تا 20 ثانیه دیگر به صفحه اعتبارسنجی پست الکترونیکی و شماره تماس هدایت خواهید شد", { autoClose : 20000 });
                 Toast.success(response?.data?.msg, { autoClose: 20000 });
                 setTimeout(() => { window.location.href = `${RouteConfig.HomeComponents.VerifyAuthPage}` }, 20000);
@@ -298,8 +300,9 @@ class Content extends React.Component
 
             if(response?.data?.code == 201 || response?.data?.code == 200)
             {
-                Toast.success(response?.data?.msg, { autoClose : 5000 });
+                Toast.success(response?.data?.msg, { autoClose : 500 });
                 localStorage.setItem("Token" , response?.data?.body?.token);
+                setTimeout(() => { window.location.href = `${RouteConfig.HomeComponents.TermsOwnedPage}` }, 500);
             }
             else Toast.error(response?.data?.msg);
 

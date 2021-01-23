@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="fa" dir="rtl">
+<html lang="en" dir="rtl">
   <head>
     <meta charset="utf-8" />
     <title>LMS</title>
     <link rel="icon" type="image/png" href="/Assets/img/favicon.png">
 
     <!--StyleSheet-->
+    <link rel="stylesheet" href="/Styles/Font.css">
     <link rel="stylesheet" href="/Assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="/Assets/css/owl.theme.default.min.css">
     <link rel="stylesheet" href="/Assets/css/owl.carousel.min.css">
@@ -25,11 +26,12 @@
     <!--StyleSheet-->
 
   </head>
-  <body>
+  <body onload="ConvertNumberPaginateToPersian()">
 
     <div id="root"></div>
 
     <!--JavaScript-->
+    <script src="/Assets/js/persian.js"></script>
     <script src="/Assets/js/popper.min.js"></script>
     <script src="/Assets/js/jquery.appear.js"></script>
     <script src="/Assets/js/jquery.meanmenu.js"></script>
@@ -41,10 +43,25 @@
     <script src="/Assets/js/form-validator.min.js"></script>
     <script src="/Assets/js/contact-form-script.js"></script>
     <script src="/Assets/js/jquery.ajaxchimp.min.js"></script>
-    <script src="Assets/js/jquery-3.5.1.slim.min.js"></script>
-    <script src="/Assets/js/bootstrap.min.js"></script>
     <script src="/Assets/js/custom.js"></script>
+    <script src="/Assets/js/bootstrap.min.js"></script>
+    <script src="/Assets/js/jquery-3.5.1.slim.min.js"></script>
+    <!--در این فسمت تمام اعداد انگلیسی صفحه بندی به فارسی تبدیل می گردد-->
+    <script>
+      function ConvertNumberPaginateToPersian()
+      {
+        const UL = document.getElementsByClassName("pagination");
+        for (let i = 0; i < UL.length; i++)
+        {
+          let childs = UL[i].children;
+          for (let j = 0; j < childs.length; j++)
+          {
+            let A = childs[j].getElementsByTagName("a")[0];
+            A.innerHTML = toPersian(A.textContent)
+          }
+        }
+      }
+    </script>
     <!--JavaScript-->
-
   </body>
 </html>

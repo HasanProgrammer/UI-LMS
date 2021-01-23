@@ -1,77 +1,10 @@
-/* IRAN Sans-serif fonts are considered a proprietary software. To gain information about the laws regarding the use of these fonts, please visit www.fontiran.com --------------------------------------------------------------------- This set of fonts are used in this project under the license: (6CMXZA) --------------------------------------------------------------------- */
-
-@font-face
-{
-    font-family: IRANSans;
-    font-style: normal;
-    font-weight: 900;
-    src: url('../Fonts/eot/IRANSansWeb(FaNum)_Black.eot');
-    src: url('../Fonts/eot/IRANSansWeb(FaNum)_Black.eot?#iefix') format('embedded-opentype'),
-    url('../Fonts/woff2/IRANSansWeb(FaNum)_Black.woff2') format('woff2'),
-    url('../Fonts/woff/IRANSansWeb(FaNum)_Black.woff') format('woff'),
-    url('../Fonts/ttf/IRANSansWeb(FaNum)_Black.ttf') format('truetype');
-}
-@font-face
-{
-    font-family: IRANSans;
-    font-style: normal;
-    font-weight: bold;
-    src: url('../Fonts/eot/IRANSansWeb(FaNum)_Bold.eot');
-    src: url('../Fonts/eot/IRANSansWeb(FaNum)_Bold.eot?#iefix') format('embedded-opentype'),
-    url('../Fonts/woff2/IRANSansWeb(FaNum)_Bold.woff2') format('woff2'),
-    url('../Fonts/woff/IRANSansWeb(FaNum)_Bold.woff') format('woff'),
-    url('../Fonts/ttf/IRANSansWeb(FaNum)_Bold.ttf') format('truetype');
-}
-@font-face
-{
-    font-family: IRANSans;
-    font-style: normal;
-    font-weight: 500;
-    src: url('../Fonts/eot/IRANSansWeb(FaNum)_Medium.eot');
-    src: url('../Fonts/eot/IRANSansWeb(FaNum)_Medium.eot?#iefix') format('embedded-opentype'),
-    url('../Fonts/woff2/IRANSansWeb(FaNum)_Medium.woff2') format('woff2'),
-    url('../Fonts/woff/IRANSansWeb(FaNum)_Medium.woff') format('woff'),
-    url('../Fonts/ttf/IRANSansWeb(FaNum)_Medium.ttf') format('truetype');
-}
-@font-face
-{
-    font-family: IRANSans;
-    font-style: normal;
-    font-weight: 300;
-    src: url('../Fonts/eot/IRANSansWeb(FaNum)_Light.eot');
-    src: url('../Fonts/eot/IRANSansWeb(FaNum)_Light.eot?#iefix') format('embedded-opentype'),
-    url('../Fonts/woff2/IRANSansWeb(FaNum)_Light.woff2') format('woff2'),
-    url('../Fonts/woff/IRANSansWeb(FaNum)_Light.woff') format('woff'),
-    url('../Fonts/ttf/IRANSansWeb(FaNum)_Light.ttf') format('truetype');
-}
-@font-face
-{
-    font-family: IRANSans;
-    font-style: normal;
-    font-weight: 200;
-    src: url('../Fonts/eot/IRANSansWeb(FaNum)_UltraLight.eot');
-    src: url('../Fonts/eot/IRANSansWeb(FaNum)_UltraLight.eot?#iefix') format('embedded-opentype'),
-    url('../Fonts/woff2/IRANSansWeb(FaNum)_UltraLight.woff2') format('woff2'),
-    url('../Fonts/woff/IRANSansWeb(FaNum)_UltraLight.woff') format('woff'),
-    url('../Fonts/ttf/IRANSansWeb(FaNum)_UltraLight.ttf') format('truetype');
-}
-@font-face
-{
-    font-family: IRANSans;
-    font-style: normal;
-    font-weight: normal;
-    src: url('../Fonts/eot/IRANSansWeb(FaNum).eot');
-    src: url('../Fonts/eot/IRANSansWeb(FaNum).eot?#iefix') format('embedded-opentype'),
-    url('../Fonts/woff2/IRANSansWeb(FaNum).woff2') format('woff2'),
-    url('../Fonts/woff/IRANSansWeb(FaNum).woff') format('woff'),
-    url('../Fonts/ttf/IRANSansWeb(FaNum).ttf') format('truetype');
-}
 *
 {
     padding: 0;
     margin: 0;
     font-family: IRANSans !important;
 }
+
 
 /*Hasan Global*/
 
@@ -180,22 +113,105 @@
 
 .comment-area
 {
-    background-color: #f8f8f8 !important;
+    background-color: white !important;
     padding: 1em !important;
-    border-right: 1px solid gray !important;
+    border: 1px solid #dedede !important;
+}
+
+.comment-area span
+{
+    margin-top:1.5em !important;
+    margin-bottom: 1.5em !important;
 }
 
 .answer-area
 {
-    background-color: #f0f0f0 !important;
+    background-color: white !important;
     padding: 1em !important;
-    border-right: 1px solid gray !important;
+    border: 1px solid #dedede !important;
 }
 
 .answer-area li, .answer-area span
 {
     margin-top:1.5em !important;
     margin-bottom: 1.5em !important;
+}
+
+.term-state
+{
+    /*background-color: var(--main-color) !important;*/
+    /*color: white !important;*/
+    padding: 2em 0 !important;
+    text-align: center !important;
+    font-size: 1.1em !important;
+    /*border: 1px solid #dedede !important;*/
+}
+
+.pagination
+{
+    padding: 1em !important;
+    border-radius: 0 !important;
+}
+
+.pagination li
+{
+    margin: 0.5em 0.5em !important;
+    border-radius: 50%;
+    background-color: #d4d7e9;
+    color: white !important;
+}
+
+.pagination .active
+{
+    background-color: var(--main-color) !important;
+    color: white !important;
+    font-weight: bold;
+}
+
+.pagination li a
+{
+    display: block;
+    width: 3em !important;
+    height: 3em !important;
+    border: none !important;
+    outline: none !important;
+    cursor: pointer !important;
+    text-align: center !important;
+    vertical-align: center !important;
+    padding-top: 0.8em !important;
+    font-size: 13px !important;
+}
+
+.last-terms
+{
+    /*background-color: var(--main-color) !important;*/
+    padding: 0.85em !important;
+    float: right !important;
+    font-size: 17px !important;
+    cursor: default !important;
+    width: 100% !important;
+    text-align: center !important;
+    /*border-bottom: 1px solid #dedede !important;*/
+}
+
+.last-terms-zero
+{
+    background-color: var(--main-color) !important;
+    padding: 0.85em !important;
+    font-size: 17px !important;
+    cursor: default !important;
+    margin-bottom: 1.45em !important;
+    color: whitesmoke !important;
+    width: 100% !important;
+    text-align: center !important;
+}
+
+.action-single-course
+{
+    border-radius: 0;
+    width: 100%;
+    color: white;
+    padding: 0.8em 0;
 }
 
 /*-------------------------------------------------------------------------------------------------*/
@@ -279,20 +295,160 @@
 
 .single-course .course-content
 {
-    height: 15em !important;
-    padding-bottom: 0 !important;
+    /*height: 15em !important;*/
+    /*padding-bottom: 0 !important;*/
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
 }
 
 .single-course .course-content p
 {
-    height: 4.7em !important;
-    overflow: hidden !important;
+    /*height: 4.7em !important;*/
+    /*overflow: hidden !important;*/
 }
 
 .single-course .course-content .lessons
 {
-    border-top: 1px solid #ebebeb;
-    height: 3em !important;
-    overflow: hidden !important;
-    padding-top: 1.1em !important;
+    /*border-top: 1px solid #ebebeb;*/
+    /*height: 3em !important;*/
+    /*overflow: hidden !important;*/
+    /*padding-top: 1.7em !important;*/
+}
+
+.instructor-content, .course-list
+{
+    background-color: white !important;
+    padding: 1.5em !important;
+    border: 1px solid #dedede !important;
+}
+
+.curriculum-list
+{
+    background-color: white !important;
+    padding: 1.5em !important;
+    padding-bottom: 1em !important;
+    border: 1px solid #dedede !important;
+}
+
+.curriculum-list h4
+{
+    background-color: var(--main-color); !important;
+}
+
+.curriculum-list li
+{
+    background-color: transparent !important;
+}
+
+.curriculum-list ul
+{
+    margin-bottom: 0.5em !important;
+}
+
+.advisor-img img
+{
+    width: 150px !important;
+    height: 150px !important;
+}
+
+.leave-reply-wrap
+{
+    background-color: #ffffff !important;
+    padding: 1.5em !important;
+    border: 1px solid #dedede !important;
+}
+
+.leave-reply-wrap h3
+{
+    background-color: var(--main-color) !important;
+    padding: 1em !important;
+}
+
+.course-list h3
+{
+    background-color: var(--main-color) !important;
+    font-size: 18px !important;
+    padding: 0.5em !important;
+}
+
+.single-course
+{
+    border: 1px solid #dedede !important;
+    box-shadow: none !important;
+    padding: 0.5em !important;
+}
+
+.user-area-style .contact-form-action
+{
+    box-shadow: none !important;
+    border: 1px solid #dedede !important;
+}
+
+.account-wrap
+{
+    border: 1px solid #dedede !important;
+}
+
+.single-course-content h3
+{
+    padding: 1em !important;
+    border: 1px solid #dedede !important;
+}
+
+.single-course-content .video-player, .single-course-content img
+{
+    width: 100% !important;
+}
+
+.single-course-content .video-player .video-react
+{
+    background-color: transparent !important;
+    margin-bottom: 3em !important;
+}
+
+.video-react .video-react-big-play-button
+{
+    border-radius: 0 !important;
+    background-color: var(--main-color) !important;
+    border: none !important;
+}
+
+.single-course-content .video-player .video-react-poster
+{
+    background-color: transparent !important;
+    border: 0 !important;
+}
+
+.default-btn.register
+{
+    width: 100% !important;
+    background-color: transparent;
+    border: 1px solid var(--heading-color);
+    color: var(--heading-color);
+}
+
+.default-btn.register:hover
+{
+    background-color: var(--main-color);
+    color: var(--white-color);
+}
+
+.default-btn.purchase-btn
+{
+    width: auto !important;
+}
+
+.user-area-style .section-title
+{
+    text-align: center !important;
+}
+.user-area-style .section-title
+{
+    background-color: transparent !important;
+}
+
+.section-title h2
+{
+    color: gray !important;
+    border-bottom: 0 !important;
 }

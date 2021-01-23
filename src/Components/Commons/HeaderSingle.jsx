@@ -73,7 +73,7 @@ class HeaderSingle extends React.Component
                                         </ul>
                                     </li>
                                     <li className="nav-item">
-                                        <a href="#" className="nav-link">
+                                        <a href="" className="nav-link">
                                             وبلاگ
                                         </a>
                                     </li>
@@ -84,9 +84,20 @@ class HeaderSingle extends React.Component
                                         <a href="contact.html" className="nav-link">درباره سایت</a>
                                     </li>
                                     <li className="nav-item">
-                                        <a href="#" className="nav-link">
-                                            سبد خرید
-                                        </a>
+                                        <a href="https://programming-land.ir" className="nav-link">سفارش پروژه</a>
+                                    </li>
+                                    <li className="nav-item">
+                                        {
+                                            localStorage.getItem("Token") !== null
+                                            ?
+                                            (
+                                                <Link to={`${RouteConfig.HomeComponents.TermsOwnedPage}`} className="nav-link">
+                                                    دوره های من
+                                                </Link>
+                                            )
+                                            :
+                                            null
+                                        }
                                     </li>
                                 </ul>
 
@@ -97,7 +108,7 @@ class HeaderSingle extends React.Component
                                         </Link>
                                     </div>
                                     <div className="register">
-                                        <Link to={`${RouteConfig.HomeComponents.AuthPage}`} className="default-btn">
+                                        <Link to={`${RouteConfig.HomeComponents.AuthPage}`} className="default-btn register">
                                             ورود | عضویت
                                         </Link>
                                     </div>

@@ -8,7 +8,7 @@ class PageTitle extends React.Component
             <div className="page-title-area bg-25">
                 <div className="container">
                     <div className="page-title-content" style={{cursor: "default"}}>
-                        <h2>{this.props.title}</h2>
+                        <h2 style={{color: "whitesmoke"}}>{this.props.title}</h2>
                         <h6 style={{color: "var(--main-color)"}}>{this.props.subtitle}</h6>
                     </div>
                 </div>
