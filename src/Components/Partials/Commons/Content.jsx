@@ -64,32 +64,29 @@ class Content extends React.Component
             case "MySQL"     : path = `${RouteServerConfig.Root + RouteServerConfig.AllCategoryTerm + "MySQL"}`;     break;
         }
 
-        setTimeout(async () =>
+        await Axios.get(path + "?PageNumber=1&CountSizePerPage=" + PaginationConfig.CountItemPerPage).then(response =>
         {
-            await Axios.get(path + "?PageNumber=1&CountSizePerPage=" + PaginationConfig.CountItemPerPage).then(response =>
-            {
-                let paginationHeader = JSON.parse(response.headers["x-pagination"]);
+            let paginationHeader = JSON.parse(response.headers["x-pagination"]);
 
-                if(response?.data?.code == 200)
-                    this.setState({
-                        Terms             : response?.data?.body.terms,
-                        CurrentPageNumber : paginationHeader?.CurrentPage,
-                        CountSizePerPage  : paginationHeader?.CountSizePerPage,
-                        TotalPages        : paginationHeader?.TotalPages,
-                        HasNextPage       : paginationHeader?.HasNext,
-                        HasPrevPage       : paginationHeader?.HasPrev,
-                        IsShowPreLoad     : false
-                    });
-
-            }).catch(response => {
-
+            if(response?.data?.code == 200)
                 this.setState({
-                    IsShowPreLoad : false,
-                    SearchMSG     : "( متاسفیم ، هیچ دوره ی مشخصی یافت نگردید )"
+                    Terms             : response?.data?.body.terms,
+                    CurrentPageNumber : paginationHeader?.CurrentPage,
+                    CountSizePerPage  : paginationHeader?.CountSizePerPage,
+                    TotalPages        : paginationHeader?.TotalPages,
+                    HasNextPage       : paginationHeader?.HasNext,
+                    HasPrevPage       : paginationHeader?.HasPrev,
+                    IsShowPreLoad     : false
                 });
 
+        }).catch(response => {
+
+            this.setState({
+                IsShowPreLoad : false,
+                SearchMSG     : "( متاسفیم ، هیچ دوره ی مشخصی یافت نگردید )"
             });
-        }, 2000)
+
+        });
     };
 
     render()
@@ -219,7 +216,8 @@ class Content extends React.Component
             case "MySQL"     : path = `${RouteServerConfig.Root + RouteServerConfig.AllCategoryTerm + "MySQL"}`;     break;
         }
 
-        setTimeout(async () =>
+        clearTimeout(this.timer);
+        this.timer = setTimeout(async () =>
         {
             await Axios.get(`${path + "?PageNumber=" +  ( page.selected + 1 ) + "&CountSizePerPage=" + PaginationConfig.CountItemPerPage}`).then(response => {
 
@@ -236,7 +234,7 @@ class Content extends React.Component
                 });
 
             }).catch(response => {});
-        }, 2000)
+        }, 1000);
     };
 
     search = async (event) =>
