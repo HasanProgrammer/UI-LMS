@@ -1,5 +1,5 @@
 {
-  "Root"                : "http://localhost:5000"               ,
+  "Root"                : "https://localhost:5001"              ,
   "CountTermCategory"   : "/api/v1.0/term/count/category"       ,
   "AllLastTerm"         : "/api/v1.0/terms/last"                ,
   "AllTerm"             : "/api/v1.0/terms"                     ,
